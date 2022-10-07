@@ -25,7 +25,7 @@ public class NotificationController {
     public String addSubscription(@PathVariable String email) {
         SubscribeRequest request = new SubscribeRequest(TOPIC_ARN, "email", email);
         snsClient.subscribe(request);
-        return "Subscription request is pending. To confirm the subscription, check your email: " + email;
+        return "Subscription request is pending. To confirm the subscription, check your email : " + email;
     }
 
     @GetMapping("/sendNotification")
