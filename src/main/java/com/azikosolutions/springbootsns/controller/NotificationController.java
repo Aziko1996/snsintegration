@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class NotificationController {
+
     @Value("${topicARN}")
     private String TOPIC_ARN;
 
